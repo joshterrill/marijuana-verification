@@ -45,7 +45,7 @@ pub fn verify_green_life(rec_id: String) -> Result<GreenLifeMedical, String> {
         Ok(patient)
       },
       None => {
-        Err(format!("Nothing found"))
+        Err(format!("Patient not found"))
       }
     }
 }
