@@ -1,1 +1,1 @@
-web: ./target/release/marijuana-verification
+web: ROCKET_PORT=$PORT ./target/release/marijuana-verification
