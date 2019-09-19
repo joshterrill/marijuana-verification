@@ -7,3 +7,5 @@ edition = "2018"
 
 [dependencies]
 rocket = "0.4.2"
+scraper = "0.10.1"
+reqwest = "0.9.20"
