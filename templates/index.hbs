@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      html, body {
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rust Marijuana Verification API</h1>
+
+    <p>A Marijuana Verification API written in Rust that verifies patients for the following systems:</p>
+
+    <ul>
+      <li>Green Life Medical</li>
+      <li>Patient ID Center</li>
+    </ul>
+
+    <p>If you would like more systems added or you would like this API implemented on your website, email me at <a href="mailto:joshterrill.dev@gmail.com">joshterrill.dev@gmail.com</a>.</p>
+
+    <h3>Endpoints</h3>
+
+    <strong>Green Life Medical</strong> <br />
+    <pre>
+  <strong>Method: GET</strong>
+  <strong>URL: /greenlife/&lt;rec_id&gt;</strong>
+  <strong>Example Response:</strong>
+  <span>
+  {
+    "doctors_name": "HARNAN GRETTA, M.D.",
+    "issue_date": "2017-10-13",
+    "patient_initials": "J.A.G",
+    "status": "EXPIRED",
+    "valid_through": "2018-10-12"
+  }
+  </span>
+    </pre>
+
+    <strong>Patient ID Center</strong> <br />
+    <pre>
+  <strong>Method: GET</strong>
+  <strong>URL: /patientidcenter/&lt;member_number&gt;/&lt;id_number&gt;</strong>
+  <strong>Example Response:</strong>
+  <span>
+    {
+      "status": "ACTIVE"
+    }
+  </span>
+    </pre>
+  </body>
+</html>
